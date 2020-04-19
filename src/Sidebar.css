@@ -1,0 +1,59 @@
+.sidebar{
+    width:75px;
+    height:100vh;
+    float:left; 
+    border-right-style: solid;
+    border-width:2px;
+    background-color:white;
+    position:fixed;
+    z-index: 100;
+}
+
+.Back{
+    opacity:0;
+    width:30px;
+    display:block;
+    margin:auto;
+    margin-top:15px;
+}
+.Menu{
+    width:30px;
+    display:block;
+    margin:auto;
+
+    position:relative;
+    bottom:-49vh;
+
+}
+.name{
+    -webkit-transform: rotate(-90deg);
+    font-size: 24px;
+    font-family: 'Moderne Sans';
+    margin-top: 35vh;
+    width: 400px;
+    margin-left: -6.7em;
+
+}
+.hidden{
+    background-color:#141414;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate3d(-300px, 0, 0);  
+    text-align:center;
+    width: 300px;
+    height: 100vh;
+    padding-top:15vh;
+}
+.hidden p{
+    font-size:18px;
+    font-family:'Moderne Sans';
+    color:white;
+    padding:50px;
+}
+.close{
+    transform: translate3d(-300px, 0, 0); 
+}
+.open{
+    transform: translate3d(300px, 0, 0); 
+}

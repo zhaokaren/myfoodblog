@@ -1,0 +1,42 @@
+.Content{
+    text-align:center;
+    font-family: 'DM Serif Display', serif;
+    width:48vw;
+    padding-top:10vh;
+    float:right;
+}
+.title{
+    font-size:32px;
+    font-family: 'Moderne Sans';
+    border-bottom:5px solid #F3D3A8;
+    display:inline-block;
+    margin-bottom: 5px;
+}
+.address{
+    margin:3px;
+    font-size:14px;
+    padding-bottom:30px;
+}
+.MiniHead{
+    font-size:14px;
+    text-decoration: underline;
+    margin:2px;
+    color:#2E4D4F;
+}
+
+td{
+    text-align:left;
+    padding:4px;
+    padding-left:10px;
+    width:15vw;
+}
+td p{
+    margin:0px;
+
+}
+.blurb{
+    width:30vw; 
+    display:absolute;
+    margin:auto;
+    padding-top:40px;
+}

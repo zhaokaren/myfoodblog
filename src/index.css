@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Playfair Display', serif;
+}
+
+code {
+
+}
+
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+@font-face{
+  font-family: 'Moderne Sans';
+  src: url('Fonts/MODERNE SANS.ttf');
+}
