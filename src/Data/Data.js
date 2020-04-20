@@ -11,6 +11,7 @@ import Photo10 from '../Photos/PeterPan/peterpan2.JPG'
 
 const photos = [
     {photo:Photo1,
+    color:"#F3D3A8",
      text:"The Good Fork",
      photos:[
         {photo:Photo1,
@@ -31,6 +32,7 @@ const photos = [
  
     {
     photo:Photo3,
+    color:"#4d6659",
     photos:[
         {photo:Photo7,
          text:"Eggs Benny"
@@ -43,13 +45,14 @@ const photos = [
     url:'/elephantgrindcoffee',
     name:"Elephant Grind Coffee",
     relativeLocation:"Leslie + 16th",
-    address:"",
+    address:"10 East Wilmot St Unit 7, Richmond Hill, ON L4B 1G9",
     commute:"Depends",
     foodValue:"Regular Brunch Pricing",
     blurb:"Very cute spot, reminds me a lot of Alchemy Coffee, putting an asian twist on classic brunch dishes. Overall food is good, very unique flavours. Not that memorable, but if you are interesed in their menu would recommend checking out."
     },
     {
         photo:Photo4,
+        color:"#d9d9d9",
         photos:[
             {photo:Photo8,
              text:"Interior of The Good Fork"
@@ -62,13 +65,14 @@ const photos = [
         url:'/mildredstemple',
         name:"Mildreds Temple",
         relativeLocation:"King St. W (very west)",
-        address:"",
+        address:"85 Hanna Ave #104, Toronto, ON M6K 3S3",
         commute:"Depends",
         foodValue:"Regular Brunch Pricing",
         blurb:"Very cute spot, reminds me a lot of Alchemy Coffee, putting an asian twist on classic brunch dishes. Overall food is good, very unique flavours. Not that memorable, but if you are interesed in their menu would recommend checking out."
         },
         {
             photo:Photo6,
+            color:"#785b33",
             photos:[
                 {photo:Photo10,
                  text:"Food"
@@ -80,14 +84,15 @@ const photos = [
             text:"PeterPan",
             url:'/peterpan',
             name:"PeterPan",
-            relativeLocation:"King St. W (very west)",
-            address:"",
+            relativeLocation:"Close to Eaton",
+            address:"373 Queen St W, Toronto, ON M5V 2A4",
             commute:"Depends",
             foodValue:"Regular Brunch Pricing",
             blurb:"Very cute spot, reminds me a lot of Alchemy Coffee, putting an asian twist on classic brunch dishes. Overall food is good, very unique flavours. Not that memorable, but if you are interesed in their menu would recommend checking out."
             },
             {
                 photo:Photo5,
+                color:"pink",
                 photos:[
                     {photo:Photo5,
                      text:"Food"
@@ -99,8 +104,8 @@ const photos = [
                 text:"Early Bird",
                 url:'/earlybird',
                 name:"Early Bird",
-                relativeLocation:"King St. W (very west)",
-                address:"",
+                relativeLocation:"Slightly West of Spadina",
+                address:"613 Queen St W, Toronto, ON M5V 2B7",
                 commute:"Depends",
                 foodValue:"Regular Brunch Pricing",
                 blurb:"Very cute spot, reminds me a lot of Alchemy Coffee, putting an asian twist on classic brunch dishes. Overall food is good, very unique flavours. Not that memorable, but if you are interesed in their menu would recommend checking out."

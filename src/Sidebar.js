@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 import './Sidebar.css'
 import arrow from './Photos/arrow.png'
 import menu from './Photos/menu.png'
-
+import egg from './Photos/egg.png'
+import cake from './Photos/dessert.png'
 class Sidebar extends Component{
     constructor(props){
         super(props);
@@ -33,8 +34,10 @@ class Sidebar extends Component{
             
             <div className="sidebar" style={btn_class}>
                 <div className="hidden">
+                    <img src={egg}/>
                     <p>Brunch</p>
                     <p>Coffee Shops</p>
+                    <img src={cake}/>
                     <p>Dessert</p>
                     <p>Cocktails</p>
                 </div>

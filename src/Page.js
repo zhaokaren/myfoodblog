@@ -23,6 +23,7 @@ class Page extends Component {
         commute={this.props.commute}
         foodValue={this.props.foodValue}
         blurb={this.props.blurb}
+        color={this.props.color}
       />
       <Photo
         photos={this.props.photos}

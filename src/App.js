@@ -39,6 +39,7 @@ function App() {
                 
                 {photo.map((e,i) =>
                     <Display 
+                    color={e.color}
                     photo={e.photo}
                     name={e.text}
                     key={i}
@@ -57,6 +58,7 @@ function App() {
                 path={route.url}
                 exact={route.exact}>
                   <Page 
+                    color={route.color}
                     name={route.name}
                     relativeLocation={route.relativeLocation}
                     address={route.address}

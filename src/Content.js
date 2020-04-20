@@ -3,11 +3,15 @@ import './Content.css';
 
 class Content extends Component{
     render(){
+        const close = {
+            borderBottom:`5px solid ${this.props.color}`,
+        };
+        
         return(
             <div >
                 <div className="Content">
                 
-                <p className="title" >{this.props.name}</p>
+                <p className="title" style={close} >{this.props.name}</p>
                 <p className="address">{this.props.relativeLocation} | {this.props.address}</p>
                     <table align="center">
                     <tr>

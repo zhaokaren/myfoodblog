@@ -11,6 +11,10 @@ import {
 class Display extends Component{
     render(){
 
+        const close = {
+            borderBottom:`3px solid ${this.props.color}`,
+        };
+        
 
         return(
             <div className="box" class="col-lg-3"> 
@@ -18,7 +22,9 @@ class Display extends Component{
                 <div className="container">
                     <img src={this.props.photo}/>
                 </div>
-                <p className="Title">{this.props.name}</p>
+                <div className="TitleBlock">
+                <p className="Title" style={close}>{this.props.name}</p>
+                </div>
             </Link>
             </div>
         )
