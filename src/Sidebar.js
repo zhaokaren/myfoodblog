@@ -4,6 +4,16 @@ import arrow from './Photos/arrow.png'
 import menu from './Photos/menu.png'
 import egg from './Photos/egg.png'
 import cake from './Photos/dessert.png'
+import coffee from './Photos/coffee.png'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useParams,
+    useRouteMatch
+  } from "react-router-dom";
+
 class Sidebar extends Component{
     constructor(props){
         super(props);
@@ -33,16 +43,25 @@ class Sidebar extends Component{
         return(
             
             <div className="sidebar" style={btn_class}>
+                
                 <div className="hidden">
+                    <p>MENU</p>
+                    <Link to="/"><p className="navMenu">Home</p></Link>
                     <img src={egg}/>
-                    <p>Brunch</p>
-                    <p>Coffee Shops</p>
+                    <Link to="/brunch"><p className="navMenu">Brunch</p></Link>
+                    <img src={coffee}/>
+                    <Link to ="/coffee"><p className="navMenu">Coffee Shops</p></Link>
                     <img src={cake}/>
-                    <p>Dessert</p>
+                    <Link to ="/dessert"><p className="navMenu">Dessert</p></Link>
                     <p>Cocktails</p>
                 </div>
                 <img className="Back" src={arrow}/>
-                <p className="name">karen's food thoughts</p>
+                <Link to="/"><p className="name">karen's food thoughts</p></Link>
+                <div class="menu-container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
                 <img className="Menu" src={menu} onClick={this.changeState.bind(this)}/>
             </div>
         )

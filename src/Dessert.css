@@ -1,0 +1,14 @@
+.Dessert-Body{
+    background-color:#141414;
+    color:white;
+    height:100vh;
+    text-align:center;
+    padding-top:30vh;
+}
+.Dessert-Body img{
+    width:200px;
+}
+.Dessert-Body p{
+    font-family:'Moderne Sans';
+    font-size:30px
+}

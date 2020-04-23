@@ -1,0 +1,15 @@
+.row{
+    text-align:center;
+}
+.homeBody{
+    width:100%;
+    text-align:center;
+    padding-top:30vh;
+}
+.home-header{
+    font-family:'Moderne Sans';
+    font-size:24px;
+}
+.homeBody p{
+    font-size:24px;
+}

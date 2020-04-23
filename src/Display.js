@@ -5,7 +5,8 @@ import {
     Switch,
     Route,
     Link,
-    useParams
+    useParams,
+    useRouteMatch
   } from "react-router-dom";
 
 class Display extends Component{
@@ -15,10 +16,10 @@ class Display extends Component{
             borderBottom:`3px solid ${this.props.color}`,
         };
         
-
         return(
             <div className="box" class="col-lg-3"> 
-             <Link to={this.props.url}>
+
+             <Link to={`/snap${this.props.url}`}>
                 <div className="container">
                     <img src={this.props.photo}/>
                 </div>

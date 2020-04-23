@@ -13,13 +13,9 @@ import {
   useRouteMatch
 } from "react-router-dom";
 import photos from './Data/Data.js'
-import Display from './Display.js'
-
-function handleClick(e) {
-  e.preventDefault();
-  console.log('The link was clicked.');
-}
-
+import Brunch from './Brunch.js'
+import Coffee from './CoffeeShops.js'
+import Dessert from './Dessert.js'
 
 function App() {
 
@@ -30,33 +26,33 @@ function App() {
       
     <Router>
       <Sidebar />
+  
       <div className="App">
+        
         <div className="Body">
         <Switch>
           <Route exact path="/">
-        
-            <div class="row">
-                
-                {photo.map((e,i) =>
-                    <Display 
-                    color={e.color}
-                    photo={e.photo}
-                    name={e.text}
-                    key={i}
-                    url={e.url}
-                  
-                    />
-                )}
-
-            </div>
+            <Home />
           </Route>
+          <Route path="/brunch">
+            <Brunch/>  
+          </Route> 
+          <Route path="/coffee">
+            <Coffee/>
+          </Route>
+          <Route path="/dessert">
+            <Dessert/>
+          </Route>
+      
+       
+          
           {photo.map((route, index) => (
               // Render more <Route>s with the same paths as
               // above, but different components this time.
+              
               <Route
                 key={index}
-                path={route.url}
-                exact={route.exact}>
+                path={`/snap${route.url}`}>
                   <Page 
                     color={route.color}
                     name={route.name}
@@ -68,7 +64,7 @@ function App() {
                     photos={route.photos}
                   />
               </Route>
-            ))}
+          ))}
             
         </Switch>
        </div>

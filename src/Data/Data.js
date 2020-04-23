@@ -8,11 +8,13 @@ import Photo5 from '../Photos/EarlyBird/EarlyBird.JPG'
 import Photo9 from '../Photos/EarlyBird/EarlyBird1.JPG'
 import Photo6 from '../Photos/PeterPan/peterpan1.JPG'
 import Photo10 from '../Photos/PeterPan/peterpan2.JPG'
+import Photo11 from '../Photos/NextDoor/nd1.JPG'
+import Photo12 from '../Photos/NextDoor/nd2.JPG'
+
 
 const photos = [
     {photo:Photo1,
     color:"#F3D3A8",
-     text:"The Good Fork",
      photos:[
         {photo:Photo1,
          text:"Interior of The Good Fork"
@@ -21,8 +23,9 @@ const photos = [
          text:"Heuvos Rancherritos"
         },
       ],
+    exact:"/brunch/thegoodfork",
      url:"/thegoodfork",
-     name:"The Bad Fork",
+     name:"The Good Fork",
      relativeLocation:"West Toronto",
      address:"1550 Dundas St W, Toronto, ON M6K 1T5",
      commute:"30 minute commute from downtown core",
@@ -41,7 +44,6 @@ const photos = [
          text:"Interior"
         },
       ],
-    text:"Elephant Grind Coffee",
     url:'/elephantgrindcoffee',
     name:"Elephant Grind Coffee",
     relativeLocation:"Leslie + 16th",
@@ -61,7 +63,6 @@ const photos = [
              text:"Heuvos Rancherritos"
             },
           ],
-        text:"Mildreds Temple",
         url:'/mildredstemple',
         name:"Mildreds Temple",
         relativeLocation:"King St. W (very west)",
@@ -81,9 +82,8 @@ const photos = [
                  text:"Interior"
                 },
               ],
-            text:"PeterPan",
             url:'/peterpan',
-            name:"PeterPan",
+            name:"Peter Pan",
             relativeLocation:"Close to Eaton",
             address:"373 Queen St W, Toronto, ON M5V 2A4",
             commute:"Depends",
@@ -101,7 +101,6 @@ const photos = [
                      text:"Interior of Early Bird - very small space"
                     },
                   ],
-                text:"Early Bird",
                 url:'/earlybird',
                 name:"Early Bird",
                 relativeLocation:"Slightly West of Spadina",
@@ -110,9 +109,28 @@ const photos = [
                 foodValue:"Regular Brunch Pricing",
                 blurb:"Very cute spot, reminds me a lot of Alchemy Coffee, putting an asian twist on classic brunch dishes. Overall food is good, very unique flavours. Not that memorable, but if you are interesed in their menu would recommend checking out."
                 },
+                {
+                  photo:Photo11,
+                  color:"blue",
+                  photos:[
+                      {photo:Photo11,
+                       text:"Food"
+                      },
+                      {photo:Photo12,
+                       text:"Interior of Early Bird - very small space"
+                      },
+                    ],
+                  url:'/nextdoor',
+                  name:"Next Door",
+                  relativeLocation:"Main St. Unionville",
+                  address:"613 Queen St W, Toronto, ON M5V 2B7",
+                  commute:"Depends",
+                  foodValue:"Regular Brunch Pricing",
+                  blurb:"Very cute spot, reminds me a lot of Alchemy Coffee, putting an asian twist on classic brunch dishes. Overall food is good, very unique flavours. Not that memorable, but if you are interesed in their menu would recommend checking out."
+                  },
                     
 
     ]
 
 
- export default photos
+export default photos;

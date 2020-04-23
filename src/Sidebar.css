@@ -32,8 +32,8 @@
     margin-top: 35vh;
     width: 400px;
     margin-left: -6.7em;
-
-}
+    text-decoration: none;
+} 
 .hidden{
     background-color:#141414;
     position: fixed;
@@ -43,16 +43,16 @@
     text-align:center;
     width: 300px;
     height: 100vh;
-    padding-top:15vh;
+    padding-top:10vh;
 }
 .hidden p{
     font-size:18px;
     font-family:'Moderne Sans';
     color:white;
-    padding:20px;
+    padding:15px;
 }
 .hidden img{
-    width:100px;
+    width:80px;
 }
 .close{
     transform: translate3d(-300px, 0, 0); 
@@ -60,3 +60,26 @@
 .open{
     transform: translate3d(300px, 0, 0); 
 }
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius:20px;
+    display:none; 
+  }
+.menu-container{
+    
+    text-align:center;
+}
+.navMenu:hover{
+    color:grey;
+}
+.navMenu{
+    text-decoration:none !important;
+}
+a:link {color: black;}      /* unvisited link */
+a:visited {color: black;}   /* visited link */
+a:hover {color: black;}     /* mouse over link */
+a:active {color: black;}    /* selected link */

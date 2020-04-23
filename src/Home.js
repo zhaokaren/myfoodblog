@@ -4,6 +4,8 @@ import Photo2 from './Photos/GoodFork2.jpg'
 import Display from './Display.js'
 import Sidebar from './Sidebar.js'
 import photos from './Data/Data.js'
+
+import './Home.css'
 import {
     BrowserRouter as Router,
     Switch,
@@ -20,22 +22,15 @@ class Home extends Component{
 
         const photo = photos;
         return(
-            <Router>
-           
-            <div class="row">
-              
-                    {photo.map((e,i) =>
-                        <Display 
-                        photo={e.photo}
-                        name={e.text}
-                        key={i}
-                        url={e.url}
-                      
-                        />
-                    )}
-
+            <div className="homeBody row">
+                <div className="col-lg-2"></div>
+                <div className="col-lg-8">
+                 <p className="home-header">welcome!</p>
+                 <p>I created this blog as a way for me to document/archive all the resturants/coffee shops/bars that I visit. If you know me, you probably know that I love food and beautiful interiors. Hopefully you will find this site useful for finding new resturants, or just exploring new spots in Toronto. I started working on this as a creative outlet to express my thoughts and find different ways to express myself.</p>
+                </div>
+                <div className="col-lg-2"></div>
             </div>
-            </Router>
+
         )
     }
 }
