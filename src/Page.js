@@ -14,8 +14,10 @@ class Page extends Component {
 
   return (
     
-    <div className="Page">
-     
+    <div className="Page row">
+      <Photo
+        photos={this.props.photos}
+      />
       <Content
         name={this.props.name}
         relativeLocation={this.props.relativeLocation}
@@ -25,9 +27,7 @@ class Page extends Component {
         blurb={this.props.blurb}
         color={this.props.color}
       />
-      <Photo
-        photos={this.props.photos}
-      />
+     
       
     </div>
   );

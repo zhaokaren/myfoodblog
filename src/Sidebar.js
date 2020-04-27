@@ -46,17 +46,17 @@ class Sidebar extends Component{
                 
                 <div className="hidden">
                     <p>MENU</p>
-                    <Link to="/"><p className="navMenu">Home</p></Link>
+                    <Link to="/"><p className="navMenu"onClick={this.changeState.bind(this)}>Home</p></Link>
                     <img src={egg}/>
-                    <Link to="/brunch"><p className="navMenu">Brunch</p></Link>
+                    <Link to="/brunch"><p className="navMenu" onClick={this.changeState.bind(this)}>Brunch</p></Link>
                     <img src={coffee}/>
-                    <Link to ="/coffee"><p className="navMenu">Coffee Shops</p></Link>
+                    <Link to ="/coffee"><p className="navMenu" onClick={this.changeState.bind(this)}>Coffee Shops</p></Link>
                     <img src={cake}/>
-                    <Link to ="/dessert"><p className="navMenu">Dessert</p></Link>
+                    <Link to ="/dessert"><p className="navMenu" onClick={this.changeState.bind(this)}>Dessert</p></Link>
                     <p>Cocktails</p>
                 </div>
                 <img className="Back" src={arrow}/>
-                <Link to="/"><p className="name">karen's food thoughts</p></Link>
+                <Link to="/"><p className="name" >karen's food thoughts</p></Link>
                 <div class="menu-container">
                     <div class="bar1"></div>
                     <div class="bar2"></div>

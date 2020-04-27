@@ -26,7 +26,9 @@ class Home extends Component{
                 <div className="col-lg-2"></div>
                 <div className="col-lg-8">
                  <p className="home-header">welcome!</p>
+                 <div class="pattern-dots-lg slategray h-5">hello</div>
                  <p>I created this blog as a way for me to document/archive all the resturants/coffee shops/bars that I visit. If you know me, you probably know that I love food and beautiful interiors. Hopefully you will find this site useful for finding new resturants, or just exploring new spots in Toronto. I started working on this as a creative outlet to express my thoughts and find different ways to express myself.</p>
+                
                 </div>
                 <div className="col-lg-2"></div>
             </div>
